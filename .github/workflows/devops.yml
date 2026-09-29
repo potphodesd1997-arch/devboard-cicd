@@ -1,12 +1,15 @@
----
 name: DevOps Pipeline
+
 on:
   push:
     branches:
       - main
+
 jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Code"
+      - name: Run Code
+        run: echo "Code"
+
 
